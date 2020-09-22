@@ -1,6 +1,7 @@
+#pragma once
 #ifndef _list_H
 struct Node;
-typedef struct Node *PtrToNode;
+typedef struct Node* PtrToNode;
 typedef PtrToNode List;
 typedef PtrToNode Position;
 typedef int ElementType;

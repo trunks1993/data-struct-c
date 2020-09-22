@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "list.h"
 
 struct Node
@@ -32,6 +32,7 @@ Position Find(ElementType X, List L)
 void Delete(ElementType X, List L)
 {
     Position P;
+    P = L->Next;
     while (P != NULL && P->Element != X)
     {
         P = P->Next;
@@ -41,6 +42,7 @@ void Delete(ElementType X, List L)
 Position FindPrevious(ElementType X, List L)
 {
     Position P = L;
+    P = L->Next;
     while (P->Next && P->Next->Element != X)
         P = P->Next;
     return P;
@@ -55,5 +57,6 @@ Position FindPrevious(ElementType X, List L)
 
 int main(void)
 {
+    printf("123");
     return 0;
 }
